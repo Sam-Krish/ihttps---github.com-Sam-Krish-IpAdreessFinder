@@ -31,6 +31,28 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void
      {
+       var latitude = 11.000000;
+       var longitude = 76.966670;
+
+      let mymap = L.map('map').setView([latitude, longitude], 13);
+      console.log(mymap)
+
+      L.tileLayer(`https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}`, {
+          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+          maxZoom: 18,
+          id: 'mapbox/streets-v11',
+          tileSize: 512,
+          zoomOffset:-1 ,
+          accessToken: 'pk.eyJ1IjoibWFsYWlzYW15IiwiYSI6ImNrcXZ0ejU4djBodmkydm8xcmt5OHVocmkifQ.P1frRY6eShHoYnuMUhpxhA'
+      }).addTo(mymap);
+      // console.log(resadress)
+
+      var circle = L.circle([latitude, longitude], {
+        color: 'red',
+        fillColor: '#f03',
+        fillOpacity: 0.5,
+        radius: 500
+      }).addTo(mymap);
 
      }
 
@@ -61,28 +83,11 @@ this.lon=JSON.parse(data.address.longitude)
 var latitude=    this.lat;
 var longitude= this.lon;
 
+
 console.log(latitude);
 console.log(longitude)
 
-let mymap = L.map('map').setView([longitude,latitude], 13);
-console.log(mymap)
 
-L.tileLayer(`https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}`, {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset:-1 ,
-    accessToken: 'pk.eyJ1IjoibWFsYWlzYW15IiwiYSI6ImNrcXZ0ejU4djBodmkydm8xcmt5OHVocmkifQ.P1frRY6eShHoYnuMUhpxhA'
-}).addTo(mymap);
-// console.log(resadress)
-
-var circle = L.circle([latitude, longitude], {
-  color: 'red',
-  fillColor: '#f03',
-  fillOpacity: 0.5,
-  radius: 500
-}).addTo(mymap);
 
 })
 }
