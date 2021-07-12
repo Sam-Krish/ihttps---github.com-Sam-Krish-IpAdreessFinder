@@ -55,7 +55,7 @@ this.pin=JSON.stringify(data.address.zip_code)
 this.lat=JSON.parse(data.address.latitude)
 this.lon=JSON.parse(data.address.longitude)
 
-var latitude=    this.lat;
+var latitude=  this.lat;
 var longitude= this.lon;
 
 console.log(latitude);
