@@ -77,9 +77,22 @@ table{
   margin-top: 25px;
 
 }
-map{
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 30px;
+}
 
-margin-bottom: 25px;
-height: 180px;
+.map-frame {
+  border: 2px solid black;
+  height: 100%;
 
+}
+
+#map {
+  height: 100%;
+  
 }
