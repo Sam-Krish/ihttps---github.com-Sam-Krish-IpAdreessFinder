@@ -1,0 +1,78 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+html {
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+}
+
+.fontsty {
+    color: antiquewhite;
+    
+}
+
+.locationcenter{
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.hoverinput{
+    transition: all 1s ease;
+}
+
+.hoverinput:hover{
+    border-color: #96BAFF;
+   
+}
+
+
+.glow {
+    font-size: 2rem;
+    color: #fff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+
+    @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #7DEDFF;
+        }
+        
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #96BAFF, 0 0 40px #96BAFF;
+        }
+      }
+
+
+.align-middle {
+    position: absolute;
+    top: 30%;
+  
+}
+
+body {
+    background-image: url("mapBg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 885px) {
+    body {
+        background-image: url("./mapBgsmall.jpg");
+    }
+}
+
+.footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   border-radius: 20px;
+   border-color: black;
+   text-align: center;
+}

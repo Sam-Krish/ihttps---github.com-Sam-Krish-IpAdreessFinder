@@ -1,0 +1,110 @@
+<div class="mx-auto" style="width: 250;">
+<form #ipform=ngForm  >
+  <body>
+    <div class="container-fluid fontsty align-middle">
+        <div class="text-center">
+            <h5 class="glow">Location Finder</h5>
+        </div>
+    <div class="row col-md-12 col-12">
+        <div class="col-md-3 col-1">
+            
+        </div>
+
+        <div class="col-md-7 col-10">
+            <div class="input-group input-group-lg mb-3">
+                <div class="col-md-10 col-11">
+                    <input type="search" [(ngModel)]="IpAddress"name="IpAddress" class="form-control hoverinput" 
+                    placeholder="Enter IP Address" aria-label="Recipient's username" aria-describedby="inputGroup-sizing-lg">
+                </div>
+                
+                <div class="col-md-2 col-1">
+                    <button class="btn btn-success" (click)="FindIp()"type="button" id="button-addon2">
+                    <i class="fa fa-search" aria-hidden="true"></i></button>
+
+                </div>
+                
+                <!-- table data start from here -->
+                
+                <div id="table">
+                  <table class="table table-dark table-striped">
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>country</td>
+                        <td>{{country}}</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Region</td>
+                        <td>{{Region}}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td >city</td>
+                        <td>{{City}}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td >Isp</td>
+                        <td>{{isp}}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td >pin</td>
+                        <td>{{pin}} {{lon}}</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                
+                </div>
+                <!-- map  -->
+                <div>
+                  <div class="map-container">
+                    <div class="map-frame">
+                      <div id="map"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div >
+            
+        </div>
+       
+    </div>
+
+    
+
+</div>
+
+<footer>
+    <div class="footer">
+       <div class="container">
+           <h5>© 2021 Veemak</h5>
+       </div>
+    </div>
+</footer>
+
+</body>
+
+
+</form>
+</div>
+
+<div>
+
+  <!-- <div class="col-lg-4 col-lg-offset-4">
+    <div class="input-group input-group-sm mb-3">
+
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    
+        <button type="button" class="btn btn-outline-primary">lookup</button>
+    
+    </div>
+    </div> -->
+    
+    
+   
+</div>
