@@ -17,26 +17,30 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
             </style>
-    <script src="https://use.fontawesome.com/e1417fcec7.js"></script>
+
 </head>
 
 <body>
+  <div>
+    <img [src]="bgimage" alt="" class="bgimage">
+  </div>
+
     <div class="container-fluid fontsty align-middle">
         <div class="text-center">
             <h5 class="glow">Location Finder</h5>
         </div>
     <div class="row col-md-12 col-12">
         <div class="col-md-3 col-1">
-            
+
         </div>
 
         <div class="col-md-7 col-10">
             <div class="input-group input-group-lg mb-3">
                 <div class="col-md-10 col-11">
-                    <input type="search" [(ngModel)]="IpAddress"name="IpAddress" class="form-control hoverinput" 
+                    <input type="search" [(ngModel)]="IpAddress"name="IpAddress" class="form-control hoverinput"
                     placeholder="Enter IP Address" aria-label="Recipient's username" aria-describedby="inputGroup-sizing-lg">
                 </div>
-                
+
                 <div class="col-md-2 col-1">
                     <button class="btn btn-success" (click)="FindIp()"type="button" id="button-addon2">
                     <i class="fa fa-search" aria-hidden="true"></i></button>
@@ -45,12 +49,13 @@
         </div>
 
         <div class="col-md-3 col-1">
-            
+
         </div>
-       
+
     </div>
 
-    
+
+
 
 </div>
 

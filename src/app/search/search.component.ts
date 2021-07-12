@@ -10,23 +10,22 @@ import { NavigationExtras, Router } from '@angular/router';
 export class SearchComponent implements OnInit {
 
   IpAddress: any;
-
+  bgimage : string = "assets/mapBgsmall1.jpg";
 
   constructor(private router:Router) { }
 
-
-
-  
   ngOnInit(): void {
 
   }
 
 FindIp(){
 debugger
-  
+
 var IpAddress=this.IpAddress;
 console.log(IpAddress)
 this.router.navigate(['/home']);
-} 
+
+
+}
 
 }

@@ -1,7 +1,9 @@
+<div>
+  <img [src]="bgimage" alt="" class="bgimage">
+</div>
 <div class="mx-auto" style="width: 250;">
 <form #ipform=ngForm  >
   <body>
-
     <div class="container-fluid fontsty align-middle">
         <div class="text-center">
             <h5 class="glow">Location Finder</h5>
@@ -24,9 +26,16 @@
 
                 </div>
 
-                <!-- table data start from here -->
+              </div>
+            </div>
 
-                <div id="table" class="row">
+                <!-- table data start from here -->
+                <div class="container-fluid col-md-12 col-12 row p-0">
+
+                  <div class="col-md-2"></div>
+
+
+                <div id="table" class="col-md-8 col-12">
                   <table class="table table-dark table-striped">
                     <tbody>
                       <tr>
@@ -53,11 +62,14 @@
                       <tr>
                         <th scope="row">5</th>
                         <td >pin</td>
-                        <td>{{pin}}</td>
+                        <td>{{pin}} {{lon}}</td>
                       </tr>
                     </tbody>
                     </table>
 
+                </div>
+
+                <div class="col-md-2"></div>
                 </div>
                 <!-- map  -->
                 <div>
@@ -67,8 +79,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
-        </div>
+
 
         <div >
 

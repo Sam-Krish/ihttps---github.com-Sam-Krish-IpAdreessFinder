@@ -7,13 +7,29 @@ html {
 }
 
 html {
-    overflow-x: hidden; 
-    overflow-y: hidden; 
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
+
+.bgimage{
+  width: 100%;
+   background-repeat: repeat;
+ }
+
+.tablehead{
+  border-radius: 2rem;
+}
+
+.rollno{
+  width: 10%;
+}
+.property{
+  width: 40%;
+}
+
 
 .fontsty {
     color: antiquewhite;
-    
 }
 
 .locationcenter{
@@ -27,7 +43,7 @@ html {
 
 .hoverinput:hover{
     border-color: #96BAFF;
-   
+
 }
 
 
@@ -41,7 +57,7 @@ html {
         from {
           text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #7DEDFF;
         }
-        
+
         to {
           text-shadow: 0 0 20px #fff, 0 0 30px #96BAFF, 0 0 40px #96BAFF;
         }
@@ -51,12 +67,12 @@ html {
 .align-middle {
     position: absolute;
     top: 30%;
-  
+
 }
 
 body {
-   
-    background-image:''; 
+
+    background-image:'';
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -73,32 +89,16 @@ body {
    text-align: center;
 }
 table{
-
+  text-align: center;
   margin-top: 25px;
-
-}
-.map-container {
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 30px; */
-
-    width: 90%;
-    height: 50rem;
-    border: 15px solid green;
-    padding: 20px;
-    margin: 10px; 
 }
 
-.map-frame {
-  border: 2px solid black;
-  height: 100%;
-
+.tabledata{
+  border-radius: 1rem;
 }
+map{
 
-#map {
-  height: 100%;
-  
+margin-bottom: 25px;
+height: 180px;
+
 }

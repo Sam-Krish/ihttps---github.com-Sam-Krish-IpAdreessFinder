@@ -21,14 +21,17 @@ export class HomeComponent implements OnInit {
   lon:any
   lat:any
 
+  bgimage : string = "assets/mapBgsmall1.jpg";
+
+
   constructor( private http:HttpClient,private ip:ipservice) { }
 
-  
 
 
-  ngOnInit(): void 
+
+  ngOnInit(): void
      {
-  
+
      }
 
 FindIp()
@@ -42,11 +45,11 @@ debugger
 
 }).subscribe((data:any)=>{
 debugger
- 
+
   console.log(JSON.stringify(data.address.country_code));
 
 this.country =JSON.stringify(data.address.country_name);
-  
+
 this.Region=JSON.stringify(data.address.region_name);
 this.City=JSON.stringify(data.address.city_name);
 this.isp=JSON.stringify(data.address.isp)
@@ -55,7 +58,7 @@ this.pin=JSON.stringify(data.address.zip_code)
 this.lat=JSON.parse(data.address.latitude)
 this.lon=JSON.parse(data.address.longitude)
 
-var latitude=  this.lat;
+var latitude=    this.lat;
 var longitude= this.lon;
 
 console.log(latitude);
@@ -82,10 +85,10 @@ var circle = L.circle([latitude, longitude], {
 
 })
 }
-} 
+}
 
 
 
-  
+
 
 
