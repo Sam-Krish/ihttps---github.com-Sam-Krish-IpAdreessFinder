@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import {HttpClientModule} from '@angular/common/http'
 import { ipservice } from './service/ipservice.service';
 import { SearchComponent } from './search/search.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 @NgModule({
@@ -22,7 +24,7 @@ import { SearchComponent } from './search/search.component';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-  
+    FontAwesomeModule
   ],
   providers: [ipservice],
   bootstrap: [AppComponent]

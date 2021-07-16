@@ -1,1 +1,17 @@
 
+   .bg{
+    background: url('../assets/images/adolfo-felix-4JL_VAgxwcU-unsplash.jpg') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+
+

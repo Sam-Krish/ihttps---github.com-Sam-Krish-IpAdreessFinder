@@ -10,7 +10,7 @@ import { NavigationExtras, Router } from '@angular/router';
 export class SearchComponent implements OnInit {
 
   IpAddress: any;
-  bgimage : string = "assets/mapBgsmall1.jpg";
+
 
   constructor(private router:Router) { }
 
